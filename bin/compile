@@ -140,9 +140,6 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
       status "Exporting config vars to environment"
       export_env_dir $env_dir
     fi
-    # Install bower/deps
-    npm install bower
-    $build_dir/node_modules/bower/bin/bower install
 
     # Install gulp locally
     npm install gulp
